@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)),
+    url('IMAGES/Background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background: transparent; /* No need for a separate background here */
+}
+
+#contact h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#reviews {
+  padding: 80px 20px;
+  background: transparent; /* Matches the background design */
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.review {
+  background-color: transparent;  /* Slight transparent white background for each review */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.review p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.review strong {
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Header Styles */
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s ease-in-out;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+nav a:hover {
+  color: #ccc;
+  transform: scale(1.1); /* Slightly increase the size when hovered */
+}
+
+nav a:active {
+  color: #f1c40f; /* Highlight color when clicked */
+  transform: scale(1); /* Prevents further scaling when clicked */
+}
+
+nav a:focus {
+  outline: none;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-buttons button {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.auth-buttons button:hover {
+  background: #000000;
+  color: white;
+}
+
+/* Main Content Styles */
+main {
+  flex-grow: 1;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left {
+  flex: 1;
+  padding-right: 50px;
+  max-width: 50%;
+}
+
+.content-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-buttons button {
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book-now {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.explore {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.cta-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.car-image {
+  max-width: 800px;
+  width: 100%;
+  filter: drop-shadow(0 20px 40px rgba(255, 255, 255, 0.15));
+  margin-top: -350px;
+}
+
+.car-image img {
+  max-width: 800px;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(255, 255, 255, 0.15));
+}
